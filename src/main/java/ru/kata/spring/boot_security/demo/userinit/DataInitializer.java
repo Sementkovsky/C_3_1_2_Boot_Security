@@ -3,8 +3,7 @@ package ru.kata.spring.boot_security.demo.userinit;
 import org.springframework.stereotype.Component;
 import ru.kata.spring.boot_security.demo.model.Role;
 import ru.kata.spring.boot_security.demo.model.User;
-import ru.kata.spring.boot_security.demo.service.UserServiceImpl;
-
+import ru.kata.spring.boot_security.demo.service.UserService;
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,9 +11,9 @@ import java.util.List;
 @Component
 public class DataInitializer {
 
-    private final UserServiceImpl userService;
+    private final UserService userService;
 
-    public DataInitializer(UserServiceImpl userService) {
+    public DataInitializer(UserService userService) {
         this.userService = userService;
     }
 

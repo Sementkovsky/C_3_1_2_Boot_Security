@@ -24,4 +24,7 @@ public interface UserService extends UserDetailsService {
     List<Role> listRoles();
 
     List<Role> listByRole(List<String> lsr);
+
+    boolean addRole(Role role);
+
 }
